@@ -43,3 +43,13 @@
     background-color: #fff;
     z-index: 100;
 }
+
+/* Hide name on profile page header. */
+.pv-text-details__left-panel h1 {
+    visibility: hidden;
+}
+
+/* Hide name on small profile page header visible when scrolling. */
+.artdeco-entity-lockup__title {
+    visibility: hidden;
+}
