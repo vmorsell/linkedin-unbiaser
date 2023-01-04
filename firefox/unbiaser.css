@@ -11,3 +11,7 @@
     visibility: hidden;
 }
 
+/* Hide school in profile header. */
+.pv-top-card .pv-text-details__right-panel-item:nth-child(2) {
+    visibility: hidden;
+}
