@@ -15,3 +15,17 @@
 .pv-top-card .pv-text-details__right-panel-item:nth-child(2) {
     visibility: hidden;
 }
+
+/*
+ * Hide content in Highlights panel.
+ * Hacky way that does the trick with all CSS in Firefox.
+ */
+#highlights {
+    visibility: visible;
+    top: 3.5em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 100;
+}
