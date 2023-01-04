@@ -29,3 +29,17 @@
     background-color: #fff;
     z-index: 100;
 }
+
+/*
+ * Hide content in Education panel.
+ * Hacky way that does the trick with all CSS in Firefox.
+ */
+#education {
+    visibility: visible;
+    top: 3.5em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 100;
+}
