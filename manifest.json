@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "LinkedIn Unbiaser",
+  "version": "0.1",
+  "description": "Makes your experience on LinkedIn a bit less biased.",
+  "content_scripts": [
+    {
+      "matches": ["*://www.linkedin.com/*"],
+      "js": ["unbiaser.js"]
+    }
+  ]
+}
+
