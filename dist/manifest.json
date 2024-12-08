@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "LinkedIn Unbiaser",
+  "description": "Remove some of your biases while browsing LinkedIn",
+  "version": "1.0",
+  "permissions": ["activeTab", "storage"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "linkedin-icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/*"],
+      "css": ["styles.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "16": "linkedin-icon.png",
+    "48": "linkedin-icon.png",
+    "128": "linkedin-icon.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "liuplugin@upper.st",
+      "strict_min_version": "42.0"
+    }
+  }
+}

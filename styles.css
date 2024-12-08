@@ -1,0 +1,41 @@
+/*
+ * Profile page
+ */
+
+/* Name */
+.pv-text-details__about-this-profile-entrypoint h1,
+.artdeco-entity-lockup__title {
+  text-shadow: 0 0 0.45em black !important;
+  color: transparent !important;
+}
+
+/* Profile picture */
+.pv-top-card-profile-picture__image,
+.presence-entity__image.EntityPhoto-circle-1 {
+  display: none;
+}
+
+/* Pronouns */
+.text-body-small:contain("(He/Him)") {
+  display: none !important;
+}
+
+/* Distance (1st etc) */
+.distance-badge {
+  display: none !important;
+}
+
+/* School */
+.pv-text-details__right-panel-item-link {
+  display: none !important;
+}
+
+/* Mutual connections */
+.artdeco-card .app-aware-link.link-without-hover-visited {
+  display: none !important;
+}
+
+/* Education */
+.artdeco-card.pv-profile-card:has(#education) {
+  display: none !important;
+}

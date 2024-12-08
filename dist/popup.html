@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        max-width: 300px;
+        padding: 0 0.2em;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+      }
+      h1 {
+        margin: 1.1em 0;
+        font-size: 1em;
+        color: rgba(255, 255, 255, 0.9) !important;
+        text-align: center;
+      }
+      p {
+        margin: 0.6em 0;
+        color: rgba(255, 255, 255, 0.9);
+      }
+      label {
+        display: block;
+        padding: 0.4em 0;
+      }
+      .featureName {
+        padding-left: 0.6em;
+      }
+      hr {
+        opacity: 0.5;
+      }
+
+      /* Light mode styles */
+      @media (prefers-color-scheme: light) {
+        body {
+          background-color: #fff;
+          color: #333;
+        }
+        h1 {
+          color: #333;
+        }
+      }
+
+      /* Dark mode styles */
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #333;
+          color: #fff;
+        }
+        h1 {
+          color: #fff;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>LinkedIn Unbiaser</h1>
+    <hr />
+    <p>
+      Select what features you want to see. Click the LinkedIn icon to change
+      this at any time.
+    </p>
+    <hr />
+    <div id="checkboxes"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
